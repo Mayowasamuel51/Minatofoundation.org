@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <main
+        class="min-h-screen bg-[url('../images/application-landing.jpg')] bg-cover relative after:z-10 after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%">
+        <header class="fixed z-[9999999999999] top-12 right-12 left-12 py-3 px-20 bg-blue rounded-[43px]">
+            <div class="flex items-center justify-between text-white">
+                <div>
+                    <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="flex items-center gap-20 md:text-lg">
+                            <li>About Us</li>
+                            <li>Programs</li>
+                            <a href="application.html">
+                                <li>Applications</li>
+                            </a>
+                            <a href="">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="relative z-20 min-h-screen flex items-center md:px-40 md:pt-20">
+            <div class="black text-[85px] leading-[102px] font-black text-white">
+                <h1 class="text-blue">Application</h1>
+                <h1 class="">to our program</h1>
+            </div>
+        </section>
+    </main>
+
+
+    <section>
+        <div class="p-20">
+            <div class="flex flex-col gap-10">
+                <h1 class="black font-bold text-7xl leading-[90px]">Join Our Program</h1>
+                <p class="mx-auto font-medium text-base md:text-[28px] leading-[55.44px]">If you are passionate about improving your future through education, career guidance, and professional development, we encourage you to apply to our programs. Fill out the application form below to get started.</p>
+            </div>
+        </div>
+        <div class="p-20">
+            <div class="flex flex-col gap-[80px]">
+                <h1 class="black text-4xl leading-[48px]">Steps to Apply:</h1>
+                <div class="flex md:flex-nowrap flex-wrap gap-[50px] text-center">
+                    <div class="relative bg-lightblue p-4 w-full">
+                        <div class="text-3xl absolute -top-[30px] left-1/2 -translate-x-1/2 font-medium w-[57px] h-[57px] bg-lemon text-white rounded-full grid place-content-center">1</div>
+                        <p class="text-[#000E24] pt-12 text-xl leading-[29.6px] font-medium">Fill out the online application form.</p>
+                    </div>
+                    <div class="relative bg-lightblue p-4 w-full ">
+                        <div class="text-3xl absolute -top-[30px] left-1/2 -translate-x-1/2 font-medium w-[57px] h-[57px] bg-lemon text-white rounded-full grid place-content-center">2</div>
+                        <p class="text-[#000E24] pt-12 text-xl leading-[29.6px] font-medium">Attach the required documents.</p>
+                    </div>
+                    <div class="relative bg-lightblue p-4 w-full">
+                        <div class="text-3xl absolute -top-[30px] left-1/2 -translate-x-1/2 font-medium w-[57px] h-[57px] bg-lemon text-white rounded-full grid place-content-center">3</div>
+                        <p class="text-[#000E24] pt-12 text-xl leading-[29.6px] font-medium">Submit your application.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-blue p-20 mb-28">
+        <div>
+            <h1 class="black font-bold text-7xl leading-[90px]">Application Form</h1>
+        </div>
+        <div>
+            <form action="">
+                <div class="flex flex-col gap-10">
+                    <ul class="list-disc text-white flex flex-col gap-10">
+                        <li>
+                            <label class="my-10 text-white text-3xl leading-[55.44px]">A brief personal statement (300 words max) explaining your goals and how Minato Foundation can help you achieve them.</label>
+                            <textarea class="bg-transparent border-none" id="lined-textarea"></textarea>
+                        </li>
+                        <li>
+                            <label class="block w-full text-white text-3xl leading-[55.44px]">Academic transcripts (if applicable)</label>
+                            <input type="file" name="" id="">
+                        </li>
+                        <li>
+                            <label class="block w-full text-white text-3xl leading-[55.44px]">A letter of recommendation (optional).</label>
+                            <input class="bg-transparent" type="file" name="" id="">
+                        </li>
+                    </ul>
+                    <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Submit Form</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="p-16 bg-darkblue text-white">
+        <div class="">
+            <h1 class="md:text-5xl font-bold pl-10 my-20">LOGO</h1>
+            <div class="flex divide-x-2 divide-white">
+                <div class="flex-1 px-10">
+                    <ul class="leading-[28.48px] md:text-lg flex flex-col gap-[27px]">
+                        <li>About Us</li>
+                        <li>Programs</li>
+                        <li>Applications</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-10">
+                    <ul class="leading-[56.16px] md:text-lg flex flex-col gap-[35px]">
+                        <li><button class="text-lemon">Contact us</button></li>
+                        <li>Email: info@minatofoundation.org</li>
+                        <li>Phone: +1 (123) 456-7890</li>
+                        <li>Address: 123 Foundation Lane, City, State, ZIP</li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-10">
+                    <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
+                        <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
+                        <li><button class="bg-lemon text-white w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

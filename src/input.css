@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'regular';
+    src: url('../font/Cygre-Regular-BF63eeebf4df0b6.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'black-font';
+    src: url('../font/Cygre-Black-BF63eeebf3942b2.ttf') format('truetype');
+}
+
+* {
+    font-family: regular, san-serif;
+}
+
+.black {
+    font-family: black-font, san-serif;
+}
+
+.swiper-wrapper>div {
+    width: fit-content !important;
+}
+
+/* LINED TEXTAREA */
+#lined-textarea {
+    width: 100%;
+    height: 400px;
+    font-size: 30px;
+    line-height: 60px;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0) calc(60px - 1px),
+      #fff calc(60px - 1px),
+      #fff 60px
+    );
+    resize: none;
+}
