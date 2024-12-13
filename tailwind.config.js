@@ -11,6 +11,7 @@ module.exports = {
         lemon: '#00C600',
         darkblue: '#000E24',
         lightblue: '#EBFFEB',
+        midblue: '#0066FF',
       }
     },
   },
