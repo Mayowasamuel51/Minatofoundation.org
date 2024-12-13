@@ -105,8 +105,87 @@
         <div>
             <h1 class="black text-center font-bold text-3xl md:text-7xl leading-[90px]">Support Us</h1>
         </div>
+        <div class="bg-[#EBFFEB] p-20 mt-[250px] mb-40 relative">
+            <div class="swiper supportUs absolute -top-[250px]">
+                <div class="swiper-wrapper w-[80%] md:w-[600px] lg:max-w-[985px]">
+                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
+                        <img src="./images/sup1.jpg" class="w-full h-[433px] object-contain object-right" alt="">
+                        <div class="absolute inset-0 z-10 text-white p-10 flex items-center">
+                            <div class="flex flex-col gap-3">
+                                <h2 class="font-extrabold text-2xl md:text-4xl">Donate</h2>
+                                <p class="md:w-[367px] text-xl leading-[24.6px]">Help us fund scholarships and initiatives that make a real impact.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
+                        <img src="./images/sup2.jpg" class="w-full h-[433px] object-contain object-right" alt="">
+                        <div class="absolute inset-0 z-10 text-white p-10 flex items-center">
+                            <div class="flex flex-col gap-3">
+                                <h2 class="font-extrabold text-2xl md:text-4xl">Volunteer</h2>
+                                <p class="md:w-[367px] text-xl leading-[24.6px]">Share your time and expertise by becoming a mentor or supporting our events.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
+                        <img src="./images/sup3.jpg" class="w-full h-[433px] object-contain object-right" alt="">
+                        <div class="absolute inset-0 z-10 text-white p-10 flex items-center">
+                            <div class="flex flex-col gap-3">
+                                <h2 class="font-extrabold text-2xl md:text-4xl">Partner with Us</h2>
+                                <p class="md:w-[367px] text-xl leading-[24.6px]">Collaborate with us to expand our reach and services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
+            </div>
+        </div>
     </section>
 
+    <footer class="p-16 bg-darkblue text-white">
+        <div class="">
+            <h1 class="md:text-5xl font-bold pl-10 my-20">LOGO</h1>
+            <div class="flex divide-x-2 divide-white">
+                <div class="flex-1 px-10">
+                    <ul class="leading-[28.48px] md:text-lg flex flex-col gap-[27px]">
+                        <li>About Us</li>
+                        <li>Programs</li>
+                        <li>Applications</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-10">
+                    <ul class="leading-[56.16px] md:text-lg flex flex-col gap-[35px]">
+                        <li><button class="text-lemon">Contact us</button></li>
+                        <li>Email: info@minatofoundation.org</li>
+                        <li>Phone: +1 (123) 456-7890</li>
+                        <li>Address: 123 Foundation Lane, City, State, ZIP</li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-10">
+                    <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
+                        <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
+                        <li><button class="bg-lemon text-white w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.supportUs', {
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
 </body>
 
 </html>
