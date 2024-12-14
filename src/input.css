@@ -39,3 +39,15 @@
     );
     resize: none;
 }
+
+/* PAGINATION STYLING */
+/* swiper-pagination-bullet swiper-pagination-bullet-active */
+
+.swiper-pagination-bullet {
+    background-color: #D9D9D9 !important;
+}
+.swiper-pagination-bullet-active {
+    width: 15px !important;
+    border-radius: 9px !important;
+    background-color: #00C600 !important;
+}

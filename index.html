@@ -44,8 +44,10 @@
                     <h1 class="">Welcome to</h1>
                     <h1 class="">Minato Foundation</h1>
                 </div>
-                <div class="flex-1 rounded-full">
+                <div class="flex-1 rounded-full relative">
                     <img src="./images/homelanding.jpg" class="w-[486px] aspect-square object-cover rounded-full" alt="">
+                    <img src="./images/home1.jpg" class="w-[200px] rounded-full absolute -bottom-[100px] right-[50px]">
+                    <img src="./images/home2.jpg" class="w-[117px] rounded-full absolute -left-[50px] top-[150px]" alt="">
                 </div>
             </div>
         </section>
@@ -141,6 +143,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="text-center">
                 <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
@@ -188,7 +191,10 @@
             autoplay: {
                 delay: 2000,
                 disableOnInteraction: false,
-            }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
         });
     </script>
 </body>

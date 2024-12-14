@@ -7,37 +7,88 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <header class="fixed z-[9999999999999] top-12 right-12 left-12 py-3 px-20 bg-blue rounded-[43px]">
-        <div class="flex items-center justify-between text-white">
-            <div>
-                <a href="index.html">
-                    <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
-                </a>
+    <main class="bg-darkblue text-white md:py-20 bg-right-top bg-contain bg-no-repeat">
+        <header class="fixed z-[9999999999999] top-12 right-12 left-12 py-3 px-20 bg-blue rounded-[43px]">
+            <div class="flex items-center justify-between text-white">
+                <div>
+                    <a href="index.html">
+                        <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
+                    </a>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="flex items-center gap-20 md:text-lg">
+                            <a href="about.html">
+                                <li>About Us</li>
+                            </a>
+                            <li>Programs</li>
+                            <a href="application.html">
+                                <li>Applications</li>
+                            </a>
+                            <a href="contact.html">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <nav>
-                    <ul class="flex items-center gap-20 md:text-lg">
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <li>Programs</li>
-                        <a href="application.html">
-                            <li>Applications</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
-                </nav>
+        </header>
+        <section class="md:pt-32 pt-20 md:px-20 px-5">
+            <div class="flex flex-col gap-5">
+                <h1 class="black font-bold text-3xl md:text-7xl leading-[90px]">Contact Us</h1>
+                <div class="black md:text-[40px] leading-[52px] font-extrabold">
+                    <p>Do you have questions or want to learn more about our foundation? </p>
+                    <p>Reach out to us!</p>
+                </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <section class="md:pt-28">
-        <div>
-            <h1 class="black text-center font-bold text-3xl md:text-7xl leading-[90px]">Contact Us</h1>
+        <section class="py-16">
+            <ul class="mx-auto md:w-[658px] font-semibold md:text-[40px] leading-[64.4px] text-center">
+                <li>Email: info@minatofoundation.org</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Foundation Lane, City, State, ZIP</li>
+            </ul>
+        </section>
+
+        <section class="py-20">
+            <p class="mx-auto lg:w-[1190px] font-semibold md:text-[40px] leading-[64.4px] text-center">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p>
+        </section>
+
+        <div class="text-center">
+            <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
         </div>
-    </section>
+    </main>
+
+    <footer class="p-16 bg-white text-black">
+        <div class="">
+            <h1 class="md:text-5xl font-bold pl-10 my-20">LOGO</h1>
+            <div class="flex divide-x-2 divide-black">
+                <div class="flex-1 px-10">
+                    <ul class="leading-[28.48px] md:text-lg flex flex-col gap-[27px]">
+                        <li>About Us</li>
+                        <li>Programs</li>
+                        <li>Applications</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-10">
+                    <ul class="leading-[56.16px] md:text-lg flex flex-col gap-[35px]">
+                        <li><button class="text-lemon">Contact us</button></li>
+                        <li>Email: info@minatofoundation.org</li>
+                        <li>Phone: +1 (123) 456-7890</li>
+                        <li>Address: 123 Foundation Lane, City, State, ZIP</li>
+                    </ul>
+                </div>
+                <div class="flex-1 px-10">
+                    <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
+                        <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
+                        <li><button class="bg-lemon text-white w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
