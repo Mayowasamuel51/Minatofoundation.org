@@ -9,18 +9,18 @@
 </head>
 <body>
     <main
-        class="min-h-screen bg-[url('../images/application-landing.jpg')] bg-cover relative after:z-10 after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%">
-        <header class="fixed z-[9999999999999] top-12 right-12 left-12 py-3 px-20 bg-blue rounded-[43px]">
+        class="min-h-screen bg-[url('../images/application-landing.jpg')] bg-cover bg-center relative after:z-10 after:absolute after:inset-0 after:bg-black after:bg-opacity-80 md:after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%">
+        <header class="fixed z-[9999999999999] top-5 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
             <div class="flex items-center justify-between text-white">
                 <div>
                     <a href="index.html">
                         <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
                     </a>
                 </div>
-                <div>
+                <div class="lg:block hidden">
                     <nav>
-                        <ul class="flex items-center gap-20 md:text-lg">
-                            <a href="index.html">
+                        <ul class="flex items-center gap-10 xl:gap-20 md:text-lg">
+                            <a href="about.html">
                                 <li>About Us</li>
                             </a>
                             <li>Programs</li>
@@ -36,8 +36,8 @@
             </div>
         </header>
 
-        <section class="relative z-20 min-h-screen flex items-center md:px-40 md:pt-20">
-            <div class="black text-[85px] leading-[102px] font-black text-white">
+        <section class="relative z-20 min-h-screen flex items-center xl:px-40 md:px-20 md:pt-20 px-5 pt-20 py-10">
+            <div class="black text-[36px] lg:text-[85px] leading-[50px] lg:leading-[102px] font-black text-white">
                 <h1 class="text-blue">Application</h1>
                 <h1 class="">to our program</h1>
             </div>
@@ -45,16 +45,16 @@
     </main>
 
 
-    <section>
-        <div class="p-20">
+    <section class="py-10">
+        <div class="p-4 py-16 md:p-20 md:py-0">
             <div class="flex flex-col gap-10">
-                <h1 class="black font-bold text-3xl md:text-7xl leading-[90px]">Join Our Program</h1>
-                <p class="mx-auto font-medium text-base md:text-[28px] leading-[55.44px]">If you are passionate about improving your future through education, career guidance, and professional development, we encourage you to apply to our programs. Fill out the application form below to get started.</p>
+                <h1 class="black font-bold text-3xl md:text-7xl leading-[40px] md:leading-[90px]">Join Our Program</h1>
+                <p class="mx-auto font-medium text-lg md:text-[28px] leading-[25px] md:leading-[55.44px]">If you are passionate about improving your future through education, career guidance, and professional development, we encourage you to apply to our programs. Fill out the application form below to get started.</p>
             </div>
         </div>
-        <div class="p-20">
+        <div class="p-4 py-16 md:p-20 md:py-0">
             <div class="flex flex-col gap-[80px]">
-                <h1 class="black text-4xl leading-[48px]">Steps to Apply:</h1>
+                <h1 class="black text-2xl md:text-4xl leading-[24px] md:leading-[48px]">Steps to Apply:</h1>
                 <div class="flex md:flex-nowrap flex-wrap gap-[50px] text-center">
                     <div class="relative bg-lightblue p-4 w-full">
                         <div class="text-3xl absolute -top-[30px] left-1/2 -translate-x-1/2 font-medium w-[57px] h-[57px] bg-lemon text-white rounded-full grid place-content-center">1</div>
@@ -73,38 +73,38 @@
         </div>
     </section>
 
-    <section class="bg-blue p-20 mb-28">
+    <section class="bg-blue p-4 md:p-10 lg:p-20 mb-28">
         <div>
-            <h1 class="black font-bold text-3xl md:text-7xl leading-[90px]">Application Form</h1>
+            <h1 class="black font-bold text-4xl md:text-7xl leading-[40px] md:leading-[90px] my-10">Application Form</h1>
         </div>
         <div>
             <form action="">
                 <div class="flex flex-col gap-10">
-                    <ul class="list-disc text-white flex flex-col gap-10">
+                    <ul class="list-disc text-white flex flex-col gap-10 p-4 md:p-0">
                         <li>
-                            <label class="my-10 text-white text-3xl leading-[55.44px]">A brief personal statement (300 words max) explaining your goals and how Minato Foundation can help you achieve them.</label>
-                            <textarea class="bg-transparent border-none" id="lined-textarea"></textarea>
+                            <label class="my-10 text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]">A brief personal statement (300 words max) explaining your goals and how Minato Foundation can help you achieve them.</label>
+                            <textarea class="bg-transparent border-none focus:border-none focus:outline-none" id="lined-textarea"></textarea>
                         </li>
                         <li>
-                            <label class="block w-full text-white text-3xl leading-[55.44px]">Academic transcripts (if applicable)</label>
-                            <input type="file" name="" id="">
+                            <label class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]">Academic transcripts (if applicable)</label>
+                            <input class="w-full" type="file" name="" id="">
                         </li>
                         <li>
-                            <label class="block w-full text-white text-3xl leading-[55.44px]">A letter of recommendation (optional).</label>
-                            <input class="bg-transparent" type="file" name="" id="">
+                            <label class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]">A letter of recommendation (optional).</label>
+                            <input class="w-full" type="file" name="" id="">
                         </li>
                     </ul>
-                    <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Submit Form</button>
+                    <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]">Submit Form</button>
                 </div>
             </form>
         </div>
     </section>
 
-    <footer class="p-16 bg-darkblue text-white">
+    <footer class="p-4 md:p-20 xl:p-32 bg-darkblue text-white">
         <div class="">
             <h1 class="md:text-5xl font-bold pl-10 my-20">LOGO</h1>
-            <div class="flex divide-x-2 divide-white">
-                <div class="flex-1 px-10">
+            <div class="flex lg:flex-row flex-col md:divide-x-2 divide-white">
+                <div class="flex-1 px-12">
                     <ul class="leading-[28.48px] md:text-lg flex flex-col gap-[27px]">
                         <li>About Us</li>
                         <li>Programs</li>
@@ -112,7 +112,7 @@
                         <li>Contact</li>
                     </ul>
                 </div>
-                <div class="flex-1 px-10">
+                <div class="flex-1 px-12">
                     <ul class="leading-[56.16px] md:text-lg flex flex-col gap-[35px]">
                         <li><button class="text-lemon">Contact us</button></li>
                         <li>Email: info@minatofoundation.org</li>
@@ -120,10 +120,10 @@
                         <li>Address: 123 Foundation Lane, City, State, ZIP</li>
                     </ul>
                 </div>
-                <div class="flex-1 px-10">
+                <div class="flex-1 px-12">
                     <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
                         <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
-                        <li><button class="bg-lemon text-white w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                        <li><button class="bg-lemon text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
                     </ul>
                 </div>
             </div>

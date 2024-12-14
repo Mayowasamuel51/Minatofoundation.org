@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <main class="bg-darkblue text-white md:py-20 bg-right-top bg-contain bg-no-repeat">
-        <header class="fixed z-[9999999999999] top-12 right-12 left-12 py-3 px-20 bg-blue rounded-[43px]">
+    <main class="bg-darkblue pb-20 text-white md:py-20 bg-right-top bg-contain bg-no-repeat">
+        <header class="fixed z-[9999999999999] top-5 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
             <div class="flex items-center justify-between text-white">
                 <div>
                     <a href="index.html">
                         <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
                     </a>
                 </div>
-                <div>
+                <div class="lg:block hidden">
                     <nav>
-                        <ul class="flex items-center gap-20 md:text-lg">
+                        <ul class="flex items-center gap-10 xl:gap-20 md:text-lg">
                             <a href="about.html">
                                 <li>About Us</li>
                             </a>
@@ -33,42 +33,41 @@
                 </div>
             </div>
         </header>
-        <div class="divide-y-2 divide-white md:px-20 px-5">
+        <div class="divide-y-2 divide-white md:px-20 px-5 py-20">
             <section class="md:pt-32 pt-20">
-                <div class="flex md:flex-nowrap flex-wrap items-center md:gap-20 gap-10">
+                <div class="flex lg:flex-row flex-col md:gap-20 gap-10">
                     <div class="flex-1 flex flex-col gap-5">
-                        <h1 class="black font-bold text-3xl md:text-7xl leading-[90px]">Contact Us</h1>
-                        <div class="black md:text-[40px] leading-[52px] font-extrabold">
+                        <h1 class="black font-bold text-3xl lg:text-7xl leading-9 lg:leading-[90px]">Contact Us</h1>
+                        <div class="black text-lg lg:text-[40px] leading-[25px] lg:leading-[52px] font-extrabold">
                             <p>Do you have questions or want to learn more about our foundation? </p>
-                            <p>Reach out to us!</p>
+                            <p class="underline">Reach out to us!</p>
                         </div>
                     </div>
                     <div class="flex-1">
-                        <img src="./images/sup3.jpg" class="w-full" alt="">
+                        <img src="./images/sup3.jpg" class="w-full h-full object-cover" alt="">
                     </div>
                 </div>
             </section>
             <section class="py-16">
-                <ul class="mx-auto md:w-[658px] font-semibold md:text-[40px] leading-[64.4px] text-center">
+                <ul class="mx-auto w-full lg:w-[658px] font-semibold lg:text-[40px] leading-[32px] lg:leading-[64.4px] text-center">
                     <li>Email: info@minatofoundation.org</li>
                     <li>Phone: +1 (123) 456-7890</li>
                     <li>Address: 123 Foundation Lane, City, State, ZIP</li>
                 </ul>
             </section>
-            <section class="py-20">
-                <p class="mx-auto lg:w-[1190px] font-semibold md:text-[40px] leading-[64.4px] text-center">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p>
+            <section class="py-16">
+                <p class="mx-auto w-full xl:w-[1190px] font-semibold text-lg lg:text-[40px] leading-[32px] lg:leading-[64.4px] text-center">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p>
             </section>
         </div>
-
         <div class="text-center">
-            <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
+            <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
         </div>
     </main>
 
-    <footer class="p-16 bg-white text-black">
+    <footer class="p-4 md:p-20 xl:p-32 bg-white text-black">
         <div class="">
             <h1 class="md:text-5xl font-bold pl-10 my-20">LOGO</h1>
-            <div class="flex divide-x-2 divide-black">
+            <div class="flex lg:flex-row flex-col md:divide-x-2 divide-white">
                 <div class="flex-1 px-10">
                     <ul class="leading-[28.48px] md:text-lg flex flex-col gap-[27px]">
                         <li>About Us</li>
@@ -88,12 +87,11 @@
                 <div class="flex-1 px-10">
                     <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
                         <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
-                        <li><button class="bg-lemon text-white w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                        <li><button class="bg-lemon text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </footer>
-    
+    </footer>    
 </body>
 </html>

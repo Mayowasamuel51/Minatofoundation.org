@@ -12,16 +12,16 @@
 <body>
     <main
         class="min-h-screen bg-blue">
-        <header class="fixed z-[9999999999999] top-12 right-12 left-12 py-3 px-20 bg-blue rounded-[43px]">
+        <header class="fixed z-[9999999999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
             <div class="flex items-center justify-between text-white">
                 <div>
                     <a href="index.html">
                         <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
                     </a>
                 </div>
-                <div>
+                <div class="lg:block hidden">
                     <nav>
-                        <ul class="flex items-center gap-20 md:text-lg">
+                        <ul class="flex items-center gap-10 xl:gap-20 md:text-lg">
                             <a href="about.html">
                                 <li>About Us</li>
                             </a>
@@ -38,22 +38,22 @@
             </div>
         </header>
 
-        <section class="relative z-20 min-h-screen flex items-center md:px-40 md:pt-28">
-            <div class="flex md:flex-nowrap flex-wrap gap-20 items-center">
-                <div class="md:flex-[2] flex-1  black text-[75px] leading-[102px] font-black text-white">
+        <section class="relative z-20 min-h-screen flex items-center md:px-20 xl:px-40 md:pt-28 px-5 pt-20 py-10">
+            <div class="flex md:flex-nowrap md:flex-row flex-col flex-wrap gap-20 items-center">
+                <div class="md:py-0 py-16 xl:flex-[2] flex-1 black text-[36px] lg:text-[75px] leading-[50px] lg:leading-[102px] font-black text-white">
                     <h1 class="">Welcome to</h1>
                     <h1 class="">Minato Foundation</h1>
                 </div>
                 <div class="flex-1 rounded-full relative">
-                    <img src="./images/homelanding.jpg" class="w-[486px] aspect-square object-cover rounded-full" alt="">
-                    <img src="./images/home1.jpg" class="w-[200px] rounded-full absolute -bottom-[100px] right-[50px]">
-                    <img src="./images/home2.jpg" class="w-[117px] rounded-full absolute -left-[50px] top-[150px]" alt="">
+                    <img src="./images/homelanding.jpg" class="w-full sm:w-[486px] aspect-square object-cover rounded-full" alt="">
+                    <img src="./images/home1.jpg" class="lg:w-[200px] w-[150px] rounded-full absolute bottom-0 md:-bottom-[80px] right-[50px]">
+                    <img src="./images/home2.jpg" class="md:w-[117px] w-[90px] rounded-full absolute left-0 md:-left-[50px] lg:top-[150px] top-[50px]" alt="">
                 </div>
             </div>
         </section>
     </main>
 
-    <section class="py-20">
+    <section class="py-20 px-4">
         <div class="flex flex-col items-center gap-20">
             <div class="flex justify-center">
                 <div class="items-end content-end">
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div>
-                <p class="md:w-[899px] w-[90%] mx-auto font-medium text-center text-base md:text-[28px] leading-[55.44px]">We are dedicated to improving academic, career, and professional opportunities for individuals from underserved backgrounds. At Minato Foundation, we believe in empowering communities through education and career development. Join us as we work together to create a brighter future.</p>
+                <p class="lg:w-[899px] w-[90%] mx-auto font-medium text-center text-lg md:text-[28px] leading-[25px] md:leading-[55.44px]">We are dedicated to improving academic, career, and professional opportunities for individuals from underserved backgrounds. At Minato Foundation, we believe in empowering communities through education and career development. Join us as we work together to create a brighter future.</p>
             </div>
             <div>
                 <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[282px] mx-auto py-5 rounded-[60px]">About Us</button>
@@ -76,28 +76,28 @@
     </section>
 
     <section class="bg-[url('../images/bg-curve.jpg')] bg-right-bottom bg-contain bg-no-repeat">
-        <div class="md:p-32 p-4">
+        <div class="md:px-20 xl:p-32 p-4">
             <h1 class="black text-center font-bold text-3xl md:text-7xl leading-[90px]">Our Programs</h1>
             <div class="">
-                <div class="flex md:flex-nowrap flex-wrap items-start gap-[76px] my-10">
+                <div class="flex lg:flex-row flex-col items-start gap-[76px] my-10">
                     <img src="./images/abt1.jpg" class="md:w-[374px] md:h-[374px] object-cover w-full" alt="">
                     <div class="flex flex-col gap-[13px]">
-                        <h2 class="text-midblue font-extrabold text-3xl leading-[55.44px] border-b-2 border-black">Scholarship Program</h2>
-                        <p class="text-2xl leading-[47.52px]">Our scholarship program provides financial aid to students from underserved backgrounds, enabling them to pursue higher education and achieve their dreams.</p>
+                        <h2 class="text-midblue font-extrabold text-[20px] md:text-3xl leading-[55.44px] border-b-2 border-black">Scholarship Program</h2>
+                        <p class="text-xl md:text-2xl leading-[30px] md:leading-[47.52px]">Our scholarship program provides financial aid to students from underserved backgrounds, enabling them to pursue higher education and achieve their dreams.</p>
                     </div>
                 </div>
-                <div class="flex items-center justify-end gap-[76px]">
+                <div class="flex lg:flex-row flex-col items-center justify-end gap-[76px]">
                     <div class="flex flex-col gap-[13px]">
-                        <h2 class="text-midblue font-extrabold text-3xl leading-[55.44px] border-b-2 border-black">Mentorship Program</h2>
-                        <p class="text-2xl leading-[47.52px]">We connect individuals with experienced professionals in their fields of interest, fostering guidance, networking, and growth.</p>
+                        <h2 class="text-midblue font-extrabold text-[20px] md:text-3xl leading-[55.44px] border-b-2 border-black">Mentorship Program</h2>
+                        <p class="text-xl md:text-2xl leading-[30px] md:leading-[47.52px]">We connect individuals with experienced professionals in their fields of interest, fostering guidance, networking, and growth.</p>
                     </div>
                     <img src="./images/abt2.jpg" class="md:w-[374px] object-cover w-full" alt="">
                 </div>
-                <div class="flex md:flex-nowrap flex-wrap items-start gap-[76px] my-10">
+                <div class="flex lg:flex-row flex-col items-start gap-[76px] my-10">
                     <img src="./images/abt3.jpg" class="md:w-[374px] md:h-[374px] object-cover w-full" alt="">
                     <div class="flex flex-col gap-[13px]">
-                        <h2 class="text-midblue font-extrabold text-3xl leading-[55.44px] border-b-2 border-black">Workshops and Training</h2>
-                        <p class="text-2xl leading-[47.52px]">We offer workshops on topics such as resume building, interview preparation, and skill development to prepare individuals for the workforce.</p>
+                        <h2 class="text-midblue font-extrabold text-[20px] md:text-3xl leading-[55.44px] border-b-2 border-black">Workshops and Training</h2>
+                        <p class="text-xl md:text-2xl leading-[30px] md:leading-[47.52px]">We offer workshops on topics such as resume building, interview preparation, and skill development to prepare individuals for the workforce.</p>
                     </div>
                 </div>
                 <div class="text-center">
@@ -112,10 +112,10 @@
         <div>
             <h1 class="black text-center font-bold text-3xl md:text-7xl leading-[90px]">Support Us</h1>
         </div>
-        <div class="bg-[#EBFFEB] p-20 mt-[250px] mb-40 relative">
+        <div class="bg-[#EBFFEB] md:p-20 p-4 mt-[250px] mb-40 relative">
             <div class="swiper supportUs absolute -top-[250px]">
-                <div class="swiper-wrapper w-[80%] md:w-[600px] lg:max-w-[985px]">
-                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
+                <div class="swiper-wrapper w-[90%] md:w-[700px] lg:max-w-[985px]">
+                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-black after:bg-opacity-90 lg:after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
                         <img src="./images/sup1.jpg" class="w-full h-[433px] object-contain object-right" alt="">
                         <div class="absolute inset-0 z-10 text-white p-10 flex items-center">
                             <div class="flex flex-col gap-3">
@@ -124,7 +124,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
+                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-black after:bg-opacity-90 lg:after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
                         <img src="./images/sup2.jpg" class="w-full h-[433px] object-contain object-right" alt="">
                         <div class="absolute inset-0 z-10 text-white p-10 flex items-center">
                             <div class="flex flex-col gap-3">
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
+                    <div class="swiper-slide relative after:absolute after:inset-0 after:bg-black after:bg-opacity-90 lg:after:bg-gradient-to-r after:from-black after:from-50% after:to-transparent">
                         <img src="./images/sup3.jpg" class="w-full h-[433px] object-contain object-right" alt="">
                         <div class="absolute inset-0 z-10 text-white p-10 flex items-center">
                             <div class="flex flex-col gap-3">
@@ -146,16 +146,16 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div class="text-center">
-                <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
+                <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
             </div>
         </div>
     </section>
 
-    <footer class="p-16 bg-darkblue text-white">
+    <footer class="p-4 md:p-20 xl:p-32 bg-darkblue text-white">
         <div class="">
             <h1 class="md:text-5xl font-bold pl-10 my-20">LOGO</h1>
-            <div class="flex divide-x-2 divide-white">
-                <div class="flex-1 px-10">
+            <div class="flex lg:flex-row flex-col md:divide-x-2 divide-white">
+                <div class="flex-1 px-12">
                     <ul class="leading-[28.48px] md:text-lg flex flex-col gap-[27px]">
                         <li>About Us</li>
                         <li>Programs</li>
@@ -163,7 +163,7 @@
                         <li>Contact</li>
                     </ul>
                 </div>
-                <div class="flex-1 px-10">
+                <div class="flex-1 px-12">
                     <ul class="leading-[56.16px] md:text-lg flex flex-col gap-[35px]">
                         <li><button class="text-lemon">Contact us</button></li>
                         <li>Email: info@minatofoundation.org</li>
@@ -171,10 +171,10 @@
                         <li>Address: 123 Foundation Lane, City, State, ZIP</li>
                     </ul>
                 </div>
-                <div class="flex-1 px-10">
+                <div class="flex-1 px-12">
                     <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
                         <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
-                        <li><button class="bg-lemon text-white w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                        <li><button class="bg-lemon text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
                     </ul>
                 </div>
             </div>
