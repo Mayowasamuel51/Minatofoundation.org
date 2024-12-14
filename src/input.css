@@ -17,8 +17,17 @@
     /* border: 1px solid; */
 }
 
+nav ul a {
+    transition: all 200ms ease-in-out;
+    transform-origin: bottom;
+}
+
+nav ul a:hover {
+    transform: scale(1.1);
+}
+
 .black {
-    font-family: black-font, san-serif;
+    font-family: "black-font", san-serif;
 }
 
 .efforts>div {
@@ -67,4 +76,39 @@
     width: 15px !important;
     border-radius: 9px !important;
     background-color: #00C600 !important;
+}
+
+/* BUTTON HOVER */
+.lemon-button {
+    transition: all 300ms ease-in-out;
+}
+
+.lemon-button:hover {
+    background-color: #00c600c2;
+}
+
+/* PREELOADER */
+#preloader {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    z-index: 999999999999999999;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ss-loaded {
+    display: block;
+}
+
+/* Hide scrolling while loading */
+.ss-preload {
+    overflow: hidden;
+}
+
+/* Allow scrolling once loaded */
+.ss-loaded {
+    overflow: auto;
 }

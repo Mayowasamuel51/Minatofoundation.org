@@ -10,9 +10,14 @@
 </head>
 
 <body>
+    <div id="preloader" class="flex justify-center items-center text-center">
+        <div id="loader" class="text-blue inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+            <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+        </div>
+    </div>
     <main
         class="min-h-screen bg-[url('../images/landing.jpg')] bg-cover bg-right relative after:z-10 after:absolute after:inset-0 after:bg-black after:bg-opacity-80 md:after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%">
-        <header class="fixed z-[9999999999999] top-5 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
+        <header class="fixed z-[99999999] top-5 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
             <div class="flex items-center justify-between text-white">
                 <div>
                     <a href="index.html">
@@ -120,7 +125,7 @@
                 <p class="black text-xl md:text-3xl leading-[25px] md:leading-[55.44px] text-center my-10 font-extrabold">Together, we can make a difference.</p>
             </div>
 
-            <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
+            <button class="text-center md:text-2xl text-white bg-lemon lemon-button font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
         </div>
     </section>
 
@@ -155,7 +160,8 @@
     </footer>
 
 
-
+    <script src="./js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.myOutline', {

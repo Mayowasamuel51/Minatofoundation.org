@@ -10,9 +10,14 @@
 </head>
 
 <body>
+    <div id="preloader" class="flex justify-center items-center text-center">
+        <div id="loader" class="text-blue inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+            <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+        </div>
+    </div>
     <main
         class="min-h-screen bg-blue">
-        <header class="fixed z-[9999999999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
+        <header class="fixed z-[99999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
             <div class="flex items-center justify-between text-white">
                 <div>
                     <a href="index.html">
@@ -25,7 +30,9 @@
                             <a href="about.html">
                                 <li>About Us</li>
                             </a>
-                            <li>Programs</li>
+                            <a href="">
+                                <li>Programs</li>
+                            </a>
                             <a href="application.html">
                                 <li>Applications</li>
                             </a>
@@ -70,12 +77,14 @@
                 <p class="lg:w-[899px] w-[90%] mx-auto font-medium text-center text-lg md:text-[28px] leading-[25px] md:leading-[55.44px]">We are dedicated to improving academic, career, and professional opportunities for individuals from underserved backgrounds. At Minato Foundation, we believe in empowering communities through education and career development. Join us as we work together to create a brighter future.</p>
             </div>
             <div>
-                <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[282px] mx-auto py-5 rounded-[60px]">About Us</button>
+                <a href="about.html">
+                    <button class="text-center md:text-2xl text-white bg-lemon lemon-button font-medium w-[282px] mx-auto py-5 rounded-[60px]">About Us</button>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="bg-[url('../images/bg-curve.jpg')] bg-right-bottom bg-contain bg-no-repeat">
+    <section class="bg-[url('../images/bg-curv.jpg')] bg-right-bottom bg-contain bg-no-repeat">
         <div class="md:px-20 xl:p-32 p-4">
             <h1 class="black text-center font-bold text-3xl md:text-7xl leading-[90px]">Our Programs</h1>
             <div class="">
@@ -101,7 +110,7 @@
                     </div>
                 </div>
                 <div class="text-center">
-                    <button class="text-center md:text-2xl text-white bg-lemon font-medium w-[282px] py-5 rounded-[60px]">About Us</button>
+                    <button class="text-center md:text-2xl text-white bg-lemon lemon-button font-medium w-[282px] py-5 rounded-[60px]">About Us</button>
                 </div>
             </div>
         </div>
@@ -146,7 +155,7 @@
                 <div class="swiper-pagination"></div>
             </div>
             <div class="text-center">
-                <button class="text-center md:text-2xl text-white bg-lemon font-medium w-full md:w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
+                <button class="text-center md:text-2xl text-white bg-lemon lemon-button font-medium w-full md:w-[416px] mx-auto py-5 rounded-[60px]">Become a Supporter</button>
             </div>
         </div>
     </section>
@@ -174,7 +183,7 @@
                 <div class="flex-1 md:px-10">
                     <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
                         <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
-                        <li><button class="bg-lemon text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                        <li><button class="bg-lemon lemon-button text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
                     </ul>
                 </div>
             </div>
@@ -183,6 +192,8 @@
 
 
 
+    <script src="./js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+    <script src="./js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper('.supportUs', {
