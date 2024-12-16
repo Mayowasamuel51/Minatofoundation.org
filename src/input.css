@@ -17,9 +17,32 @@
     /* border: 1px solid; */
 }
 
+body {
+    overflow-x: hidden;
+}
+
 nav ul a {
     transition: all 200ms ease-in-out;
     transform-origin: bottom;
+}
+
+header {
+    border: 2px solid #0059DF;
+    border-radius: 43px;
+    padding-bottom: 0;
+    transition: all 400ms 50ms ease-in-out;
+}
+
+@media only screen and (max-width: 500px) {
+    header.hide {
+        top: -100%;
+    }
+}
+
+header.show {
+    border: 1px solid white;
+    border-radius: 43px;
+    padding-bottom: 260px;
 }
 
 nav ul a:hover {
@@ -111,4 +134,65 @@ nav ul a:hover {
 /* Allow scrolling once loaded */
 .ss-loaded {
     overflow: auto;
+}
+
+/* Hamburger styling */
+/* From Uiverse.io by vinodjangid07 */ 
+#checkbox {
+    display: none;
+}
+  
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    transition-duration: .5s;
+}
+  
+.bars {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 4px;
+}
+  
+#bar2 {
+    transition-duration: .8s;
+}
+  
+#bar1,#bar3 {
+    width: 70%;
+}
+  
+#checkbox:checked + .toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar1 {
+    width: 70%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle #bar3 {
+    width: 70%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+  
+#checkbox:checked + .toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
 }

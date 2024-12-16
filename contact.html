@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
+    <link rel="icon" href="./images/logo.svg" type="image/svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="preloader" class="flex justify-center items-center text-center">
@@ -13,12 +16,36 @@
         </div>
     </div>
     <main class="bg-darkblue pb-20 text-white md:py-20 bg-right-top bg-contain bg-no-repeat">
-        <header class="fixed z-[99999999] top-5 lg:top-12 md:right-12 right-2 md:left-12 left-2 py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
+        <header class="myHeader overflow-hidden fixed z-[99999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 lg:py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
             <div class="flex items-center justify-between text-white">
                 <div>
                     <a href="index.html">
-                        <h1 class="text-white font-bold md:text-3xl">LOGO</h1>
+                        <img class="w-14 h-14 lg:w-auto lg:h-auto" src="./images/logo.svg" alt="">
                     </a>
+                </div>
+                <div class="lg:hidden block ">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                </div>
+                <div class="mobile-nav lg:hidden block absolute top-20 left-0 right-0">
+                    <ul class="leading-[50px] text-center px-9">
+                        <a href="about.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="">
+                            <li>Programs</li>
+                        </a>
+                        <a href="application.html">
+                            <li>Applications</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
                 </div>
                 <div class="lg:block hidden">
                     <nav>
@@ -26,7 +53,9 @@
                             <a href="about.html">
                                 <li>About Us</li>
                             </a>
-                            <li>Programs</li>
+                            <a href="">
+                                <li>Programs</li>
+                            </a>
                             <a href="application.html">
                                 <li>Applications</li>
                             </a>
@@ -44,23 +73,23 @@
                     <div class="flex-1 flex flex-col gap-5">
                         <h1 class="black font-bold text-3xl lg:text-7xl leading-9 lg:leading-[90px]">Contact Us</h1>
                         <div class="black text-lg lg:text-[40px] leading-[25px] lg:leading-[52px] font-extrabold">
-                            <p>Do you have questions or want to learn more about our foundation? </p>
-                            <p class="underline">Reach out to us!</p>
+                            <p data-aos="fade-right" data-aos-delay="100">Do you have questions or want to learn more about our foundation? </p>
+                            <p data-aos="fade-right" data-aos-delay="200" class="underline">Reach out to us!</p>
                         </div>
                     </div>
-                    <div class="flex-1">
-                        <img src="./images/sup3.jpg" class="w-full h-full object-cover" alt="">
+                    <div data-aos="fade-left" class="flex-1">
+                        <img src="./images/contact-photo.jpg" class="w-full h-[600px] object-cover object-top" alt="">
                     </div>
                 </div>
             </section>
             <section class="py-16">
                 <ul class="mx-auto w-full lg:w-[658px] font-semibold lg:text-[40px] leading-[32px] lg:leading-[64.4px] text-center">
-                    <li>Email: info@minatofoundation.org</li>
-                    <li>Phone: +1 (123) 456-7890</li>
-                    <li>Address: 123 Foundation Lane, City, State, ZIP</li>
+                    <li data-aos="fade-up" data-aos-delay="100">Email: info@minatofoundation.org</li>
+                    <li data-aos="fade-up" data-aos-delay="200">Phone: +1 (123) 456-7890</li>
+                    <li data-aos="fade-up" data-aos-delay="300">Address: 123 Foundation Lane, City, State, ZIP</li>
                 </ul>
             </section>
-            <section class="py-16">
+            <section  data-aos="fade-up" class="py-16">
                 <p class="mx-auto w-full xl:w-[1190px] font-semibold text-lg lg:text-[40px] leading-[32px] lg:leading-[64.4px] text-center">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p>
             </section>
         </div>
@@ -69,31 +98,43 @@
         </div>
     </main>
 
-    <footer class="p-4 md:p-20 xl:p-32 bg-white text-black">
+    <footer class="relative xl:pt-32 xl:px-32 p-4 md:p-20 xl:p-32 bg-white text-black">
         <div class="">
             <h1 class="md:text-5xl font-bold md:pl-10 my-20">LOGO</h1>
             <div class="flex lg:flex-row flex-col gap-10 md:divide-x-2 divide-white">
                 <div class="flex-1 md:px-10">
                     <ul class="leading-9 lg:leading-[40px] md:text-lg flex flex-col">
-                        <li>About Us</li>
-                        <li>Programs</li>
-                        <li>Applications</li>
-                        <li>Contact</li>
+                        <li data-aos="fade-up" data-aos-delay="100">About Us</li>
+                        <li data-aos="fade-up" data-aos-delay="200">Programs</li>
+                        <li data-aos="fade-up" data-aos-delay="300">Applications</li>
+                        <li data-aos="fade-up" data-aos-delay="400">Contact</li>
                     </ul>
                 </div>
                 <div class="flex-1 md:px-10">
                     <ul class="leading-10 lg:leading-[56.16px] md:text-lg flex flex-col">
-                        <li><button class="text-lemon">Contact us</button></li>
-                        <li>Email: info@minatofoundation.org</li>
-                        <li>Phone: +1 (123) 456-7890</li>
-                        <li>Address: 123 Foundation Lane, City, State, ZIP</li>
+                        <li data-aos="fade-up" data-aos-delay="500"><button class="text-lemon w-[162px] text-center border-2 border-black rounded-[26.78px]">Contact us</button></li>
+                        <li data-aos="fade-up" data-aos-delay="600">Email: info@minatofoundation.org</li>
+                        <li data-aos="fade-up" data-aos-delay="700">Phone: +1 (123) 456-7890</li>
+                        <li data-aos="fade-up" data-aos-delay="800">Address: 123 Foundation Lane, City, State, ZIP</li>
                     </ul>
                 </div>
                 <div class="flex-1 md:px-10">
                     <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
-                        <li><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
-                        <li><button class="bg-lemon text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
+                        <li data-aos="fade-up" data-aos-delay="900"><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
+                        <li data-aos="fade-up" data-aos-delay="1000"><button class="bg-lemon lemon-button text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
                     </ul>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="flex gap-3 text-2xl">
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                </div>
+                <div class="text-right">
+                    <p>© 2024 Minato Foundation</p>
                 </div>
             </div>
         </div>
@@ -102,5 +143,29 @@
 
     <script src="./js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
     <script src="./js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            });
+        })
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
