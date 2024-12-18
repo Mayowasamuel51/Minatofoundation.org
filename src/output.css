@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -1816,10 +1816,6 @@ nav ul a:hover {
     justify-content: flex-end;
   }
 
-  .lg\:bg-opacity-0 {
-    --tw-bg-opacity: 0;
-  }
-
   .lg\:object-contain {
     -o-object-fit: contain;
        object-fit: contain;
@@ -1888,11 +1884,6 @@ nav ul a:hover {
   .lg\:after\:bg-gradient-to-r::after {
     content: var(--tw-content);
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
-  }
-
-  .lg\:after\:bg-none::after {
-    content: var(--tw-content);
-    background-image: none;
   }
 }
 
