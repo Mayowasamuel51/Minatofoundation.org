@@ -665,6 +665,10 @@ video {
   margin-top: 250px;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -777,6 +781,18 @@ video {
   width: 100%;
 }
 
+.w-\[\] {
+  width: ;
+}
+
+.w-\[197\] {
+  width: 197;
+}
+
+.w-\[197px\] {
+  width: 197px;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -880,6 +896,14 @@ video {
   gap: 80px;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
@@ -923,6 +947,18 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-\[2\] {
+  border-radius: 2;
+}
+
+.rounded-\[25\] {
+  border-radius: 25;
+}
+
+.rounded-\[25px\] {
+  border-radius: 25px;
+}
+
 .\!border-0 {
   border-width: 0px !important;
 }
@@ -933,6 +969,10 @@ video {
 
 .border-4 {
   border-width: 4px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-b-2 {
@@ -1106,6 +1146,16 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pb-20 {
   padding-bottom: 5rem;
 }
@@ -1116,6 +1166,10 @@ video {
 
 .pt-20 {
   padding-top: 5rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
 }
 
 .text-center {
@@ -1275,6 +1329,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in-out {
@@ -1558,6 +1616,10 @@ nav ul a:hover {
 .after\:to-70\%::after {
   content: var(--tw-content);
   --tw-gradient-to-position: 70%;
+}
+
+.hover\:gap-4:hover {
+  gap: 1rem;
 }
 
 .focus\:border-none:focus {

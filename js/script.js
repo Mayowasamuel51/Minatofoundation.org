@@ -28,17 +28,14 @@
         //     $('.myHeader').toggleClass("show", $(this).is(':checked'));
         // });
     }
-
     const hideHeader = function () {
         let lastScrollTop = 0;
         $(window).on('scroll', function() {
             let currentScroll = $(this).scrollTop();
             if (currentScroll > lastScrollTop) {
-            // Scrolling down
-            $('.myHeader').addClass('hide');
+                $('.myHeader').addClass('hide');
             } else {
-            // Scrolling up
-            $('.myHeader').removeClass('hide');
+                $('.myHeader').removeClass('hide');
             }
             lastScrollTop = currentScroll;
         });
