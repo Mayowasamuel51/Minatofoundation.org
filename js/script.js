@@ -5,7 +5,18 @@
         navShow();
         hideHeader();
         textAreaCheck();
+        label();
     });
+    const label = ()=> {
+        $('#academic_transcript').on('change', function() {
+            var fileName = $(this).val().split('\\').pop();
+            $('.display-acad-name').text(fileName);
+        });
+        $('#recommendation_letter').change(function() {
+            var fileName = $(this).val().split('\\').pop();
+            $('.display-rec-name').text(fileName);
+        });
+    }
     const ssPreloader = function () {
         $("html").addClass('ss-preload');
         $(window).on('load', function () {
