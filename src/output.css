@@ -1752,6 +1752,11 @@ nav ul a:hover {
     line-height: 90px;
   }
 
+  .md\:after\:bg-transparent::after {
+    content: var(--tw-content);
+    background-color: transparent;
+  }
+
   .md\:after\:bg-gradient-to-r::after {
     content: var(--tw-content);
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
@@ -1809,6 +1814,10 @@ nav ul a:hover {
 
   .lg\:justify-end {
     justify-content: flex-end;
+  }
+
+  .lg\:bg-opacity-0 {
+    --tw-bg-opacity: 0;
   }
 
   .lg\:object-contain {
@@ -1879,6 +1888,11 @@ nav ul a:hover {
   .lg\:after\:bg-gradient-to-r::after {
     content: var(--tw-content);
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+
+  .lg\:after\:bg-none::after {
+    content: var(--tw-content);
+    background-image: none;
   }
 }
 
