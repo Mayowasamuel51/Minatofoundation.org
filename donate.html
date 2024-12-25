@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATE</title>
+    <link rel="icon" href="./images/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="./src/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="preloader" class="flex justify-center items-center text-center">
+        <div id="loader" class="text-blue inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
+            <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
+        </div>
+    </div>
+    <main class="min-h-screen bg-[url('../images/application-landing.jpg')] bg-cover bg-center relative after:z-10 after:absolute after:inset-0 after:bg-black md:after:bg-transparent after:bg-opacity-80 md:after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%">
+        <header class="myHeader overflow-hidden fixed z-[99999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 lg:py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
+            <div class="flex items-center justify-between text-white">
+                <div>
+                    <a href="index.html">
+                        <img class="w-14 h-14 lg:w-auto lg:h-auto" src="./images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="lg:hidden block ">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="toggle">
+                        <div class="bars" id="bar1"></div>
+                        <div class="bars" id="bar2"></div>
+                        <div class="bars" id="bar3"></div>
+                    </label>
+                </div>
+                <div class="mobile-nav lg:hidden block absolute top-20 left-0 right-0">
+                    <ul class="leading-[50px] text-center px-9">
+                        <a href="about.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="donate.html">
+                            <li>Donate</li>
+                        </a>
+                        <a href="application.html">
+                            <li>Applications</li>
+                        </a>
+                        <a href="contact.html">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="lg:block hidden">
+                    <nav>
+                        <ul class="flex items-center gap-10 xl:gap-20 md:text-lg">
+                            <a href="about.html">
+                                <li>About Us</li>
+                            </a>
+                            <a href="donate.html">
+                                <li>Donate</li>
+                            </a>
+                            <a href="application.html">
+                                <li>Applications</li>
+                            </a>
+                            <a href="contact.html">
+                                <li>Contact</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="relative z-20 min-h-screen flex items-center xl:px-40 md:px-20 md:pt-20 px-5 pt-20 py-10">
+            <div class="black text-[36px] lg:text-[85px] leading-[50px] lg:leading-[102px] font-black text-white">
+                <h1 data-aos="fade-right" data-aos-delay="1500" class="text-blue">Donate</h1>
+                <h1 data-aos="fade-down" data-aos-duration="500" data-aos-delay="1700" class="">to our program</h1>
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <h1 class="text-center font-bold md:text-4xl">DONATE</h1>
+        
+    </section>
+
+    <script src="./js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
