@@ -8,6 +8,11 @@
 }
 
 @font-face {
+    font-family: 'light';
+    src: url('../font/Cygre-Light-BF63eeebf809d3d.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'black-font';
     src: url('../font/Cygre-Black-BF63eeebf3942b2.ttf') format('truetype');
 }
@@ -15,6 +20,14 @@
 * {
     font-family: 'regular', san-serif;
     /* border: 1px solid; */
+}
+
+.font_light {
+    font-family: 'light', san-serif;
+}
+
+.font_black {
+    font-family: 'black-font', san-serif;
 }
 
 body {
@@ -195,4 +208,11 @@ nav ul a:hover {
 #checkbox:checked + .toggle {
     transition-duration: .5s;
     transform: rotate(180deg);
+}
+
+/* GRID DONATE */
+div.grid-donate {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 100px;
 }
