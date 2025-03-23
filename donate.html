@@ -1,200 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DONATE</title>
-    <link rel="icon" href="./images/logo.svg" type="image/svg">
-    <link rel="stylesheet" href="./src/output.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link rel="icon" href="./images/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+  </head>
+  <body>
     <div id="preloader" class="flex justify-center items-center text-center">
-        <div id="loader" class="text-blue inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]" role="status">
-            <span class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Loading...</span>
-        </div>
+      <div
+        id="loader"
+        class="text-blue inline-block h-12 w-12 animate-spin rounded-full border-4 border-solid border-current border-e-transparent align-[-0.125em] text-surface motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        role="status"
+      >
+        <span
+          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          >Loading...</span
+        >
+      </div>
     </div>
-    <main class="min-h-screen bg-[url('../images/donate.jpg')] bg-cover bg-center relative after:z-10 after:absolute after:inset-0 after:bg-black md:after:bg-transparent after:bg-opacity-80 md:after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%">
-        <header class="myHeader overflow-hidden fixed z-[99999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 lg:py-4 xl:px-20 px-9 bg-blue rounded-[43px]">
-            <div class="flex items-center justify-between text-white">
-                <div>
-                    <a href="index.html">
-                        <img class="w-14 h-14 lg:w-auto lg:h-auto" src="./images/logo.svg" alt="">
-                    </a>
-                </div>
-                <div class="lg:hidden block ">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox" class="toggle">
-                        <div class="bars" id="bar1"></div>
-                        <div class="bars" id="bar2"></div>
-                        <div class="bars" id="bar3"></div>
-                    </label>
-                </div>
-                <div class="mobile-nav lg:hidden block absolute top-20 left-0 right-0">
-                    <ul class="leading-[50px] text-center px-9">
-                        <a href="about.html">
-                            <li>About Us</li>
-                        </a>
-                        <a href="donate.html">
-                            <li>Donate</li>
-                        </a>
-                        <a href="application.html">
-                            <li>Applications</li>
-                        </a>
-                        <a href="contact.html">
-                            <li>Contact</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="lg:block hidden">
-                    <nav>
-                        <ul class="flex items-center gap-10 xl:gap-20 md:text-lg">
-                            <a href="about.html">
-                                <li>About Us</li>
-                            </a>
-                            <a href="donate.html">
-                                <li>Donate</li>
-                            </a>
-                            <a href="application.html">
-                                <li>Applications</li>
-                            </a>
-                            <a href="contact.html">
-                                <li>Contact</li>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+    <main
+      class="min-h-screen bg-[url('../images/donate.jpg')] bg-cover bg-center relative after:z-10 after:absolute after:inset-0 after:bg-black md:after:bg-transparent after:bg-opacity-80 md:after:bg-gradient-to-r after:from-black after:from-30% after:to-transparent after:to-70%"
+    >
+      <header
+        class="myHeader overflow-hidden fixed z-[99999999] top-5 md:top-6 lg:top-12 md:right-12 right-2 md:left-12 left-2 lg:py-4 xl:px-20 px-9 bg-blue rounded-[43px]"
+      >
+        <div class="flex items-center justify-between text-white">
+          <div>
+            <a href="index.html">
+              <img
+                class="w-14 h-14 lg:w-auto lg:h-auto"
+                src="./images/logo.svg"
+                alt=""
+              />
+            </a>
+          </div>
+          <div class="lg:hidden block">
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" class="toggle">
+              <div class="bars" id="bar1"></div>
+              <div class="bars" id="bar2"></div>
+              <div class="bars" id="bar3"></div>
+            </label>
+          </div>
+          <div
+            class="mobile-nav lg:hidden block absolute top-20 left-0 right-0"
+          >
+            <ul class="leading-[50px] text-center px-9">
+              <a href="about.html">
+                <li>About Us</li>
+              </a>
+              <a href="donate.html">
+                <li>Donate</li>
+              </a>
+              <a href="application.html">
+                <li>Applications</li>
+              </a>
+              <a href="contact.html">
+                <li>Contact</li>
+              </a>
+            </ul>
+          </div>
+          <div class="lg:block hidden">
+            <nav>
+              <ul class="flex items-center gap-10 xl:gap-20 md:text-lg">
+                <a href="about.html">
+                  <li>About Us</li>
+                </a>
+                <a href="donate.html">
+                  <li>Donate</li>
+                </a>
+                <a href="application.html">
+                  <li>Applications</li>
+                </a>
+                <a href="contact.html">
+                  <li>Contact</li>
+                </a>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-        <section class="relative z-20 min-h-screen flex items-center xl:px-40 md:px-20 md:pt-20 px-5 pt-20 py-10">
-            <div class="black text-[36px] lg:text-[85px] text-white">
-                <h1 data-aos="fade-right" data-aos-delay="1500" class="font_black text-blue leading-[50px] lg:leading-[102px]">Donate</h1>
-                <h1 data-aos="fade-down" data-aos-duration="500" data-aos-delay="1700" class="font_light lg:w-[514px] text-base md:text-[20px] leaidng-[33px] text-[#FAFCFF]">Join us in empowering African youth and providing them with opportunities for quality education, bringing hope to families and communities.</h1>
-            </div>
-        </section>
+      <section
+        class="relative z-20 min-h-screen flex items-center xl:px-40 md:px-20 md:pt-20 px-5 pt-20 py-10"
+      >
+        <div class="black text-[36px] lg:text-[85px] text-white">
+          <h1
+            data-aos="fade-right"
+            data-aos-delay="1500"
+            class="font_black text-blue leading-[50px] lg:leading-[102px]"
+          >
+            Donate
+          </h1>
+          <h1
+            data-aos="fade-down"
+            data-aos-duration="500"
+            data-aos-delay="1700"
+            class="font_light lg:w-[514px] text-base md:text-[20px] leaidng-[33px] text-[#FAFCFF]"
+          >
+            Join us in empowering African youth and providing them with
+            opportunities for quality education, bringing hope to families and
+            communities.
+          </h1>
+        </div>
+      </section>
     </main>
 
-    <section class="pt-32 pb-40 md:px-32 px-4 bg-[url('../images/bg-curve.jpg')] bg-left-bottom bg-contain bg-no-repeat">
-        <h1 data-aos="fade-right" class="text-[30px] md:text-[75px] font-extrabold text-darkblue md:my-20 my-8">Donate to Minato</h1>
-        <div class="grid-donate">
-            <div data-aos="fade-up" class="bg-lightblue">
-                <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">Become a Minato Partner</h1>
-                <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
-                    <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">Make an impact in the world by donating a minimum of $20 to EFF monthly or an aggregated annual sum of $240.</p>
-                    <div class="text-center">
-                        <button class="bg-darkblue w-[239px] rounded-[13px] text-white py-2">Donate Now</button>
-                    </div>
-                </div>
+    <section
+      class="pt-32 pb-40 md:px-32 px-4 bg-[url('../images/bg-curve.jpg')] bg-left-bottom bg-contain bg-no-repeat"
+    >
+      <h1
+        data-aos="fade-right"
+        class="text-[30px] md:text-[75px] font-extrabold text-darkblue md:my-20 my-8"
+      >
+        Donate to Minato
+      </h1>
+      <div class="grid-donate">
+        <div data-aos="fade-up" class="bg-lightblue">
+          <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">
+            Become a Minato Partner
+          </h1>
+          <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
+            <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">
+              Make an impact in the world by donating a minimum of $20 to EFF
+              monthly or an aggregated annual sum of $240.
+            </p>
+            <div class="text-center">
+              <div id="paystack-apple-pay"></div>
+              <button id="paystack-other-channels">Donate now</button>
+              <!-- <button class="bg-darkblue w-[239px] rounded-[13px] text-white py-2">Donate Now</button> -->
             </div>
-            <div data-aos="fade-up" data-aos-delay="200" class="bg-lightblue">
-                <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">One-time Special Donor</h1>
-                <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
-                    <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">Make a meaningful impact by giving a one-time donation to the EFF and supporting the empowerment of the africa Youths.</p>
-                    <div class="text-center">
-                        <button class="bg-darkblue w-[239px] rounded-[13px] text-white py-2">Donate Now</button>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="400" class="bg-lightblue">
-                <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">Organize a GIVE campaign</h1>
-                <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
-                    <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">Host an event like movie shows, game nights, etc. to raise funds for EFF. We will provide all props and presentation necessary for your GIVE speech.</p>
-                    <div class="text-center">
-                        <button class="bg-darkblue w-[239px] rounded-[13px] text-white py-2">Donate Now</button>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="600" class="bg-lightblue">
-                <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">Celebration Contributions</h1>
-                <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
-                    <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">Include EFF in your special celebrations, like birthdays or anniversaries, by requesting friends and family to donate instead of giving traditional gifts. EFF will provide a dedicated donation link for easy tracking of contributions.</p>
-                    <div class="text-center">
-                        <button class="bg-darkblue w-[239px] rounded-[13px] text-white py-2">Donate Now</button>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="bg-lightblue">
+          <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">
+            One-time Special Donor
+          </h1>
+          <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
+            <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">
+              Make a meaningful impact by giving a one-time donation to the EFF
+              and supporting the empowerment of the africa Youths.
+            </p>
+            <div class="text-center">
+              <button
+                class="bg-darkblue w-[239px] rounded-[13px] text-white py-2"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="bg-lightblue">
+          <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">
+            Organize a GIVE campaign
+          </h1>
+          <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
+            <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">
+              Host an event like movie shows, game nights, etc. to raise funds
+              for EFF. We will provide all props and presentation necessary for
+              your GIVE speech.
+            </p>
+            <div class="text-center">
+              <button
+                class="bg-darkblue w-[239px] rounded-[13px] text-white py-2"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="600" class="bg-lightblue">
+          <h1 class="text-[28px] font-semibold bg-lemon py-3 px-10">
+            Celebration Contributions
+          </h1>
+          <div class="bg-lightblue p-10 flex flex-col justify-between h-full">
+            <p class="text-[20px] leading-[39.6px] font-medium text-[#000E24]">
+              Include EFF in your special celebrations, like birthdays or
+              anniversaries, by requesting friends and family to donate instead
+              of giving traditional gifts. EFF will provide a dedicated donation
+              link for easy tracking of contributions.
+            </p>
+            <div class="text-center">
+              <button
+                class="bg-darkblue w-[239px] rounded-[13px] text-white py-2"
+              >
+                Donate Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="md:p-20 p-10 bg-[#C7DEFF] ">
-        <div class="flex flex-col gap-10">
-            <p class="text-xl md:text-[40px] md:leading-[79.2px] font-semibold">Your contribution allows us to bring hope to African families by empowering youth and facilitating their journey to quality education, fostering economic freedom.</p>
-            <p class="md:text-[28px] md:leading-[45px] font_light">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p>
-        </div>
+    <section class="md:p-20 p-10 bg-[#C7DEFF]">
+      <div class="flex flex-col gap-10">
+        <p class="text-xl md:text-[40px] md:leading-[79.2px] font-semibold">
+          Your contribution allows us to bring hope to African families by
+          empowering youth and facilitating their journey to quality education,
+          fostering economic freedom.
+        </p>
+        <p class="md:text-[28px] md:leading-[45px] font_light">
+          Together, we can make education and career opportunities accessible to
+          all. Join us in making a difference!
+        </p>
+      </div>
     </section>
 
-    <footer class="relative p-4 md:p-20 xl:pt-32 xl:px-32 bg-darkblue text-white">
-        <div class="">
-            <div data-aos="fade-right" data-aos-delay="50" class="my-20">
-                <img src="./images/footer.png" alt="">
-            </div>
-            <div class="flex lg:flex-row flex-col gap-10 md:divide-x-2 divide-white">
-                <div class="flex-1 md:px-10">
-                    <ul class="leading-9 lg:leading-[40px] md:text-lg flex flex-col">
-                        <li data-aos="fade-up" data-aos-delay="100"><a href="about.html">About Us</a></li>
-                        <li data-aos="fade-up" data-aos-delay="200"><a href="donate.html">Donate</a></li>
-                        <li data-aos="fade-up" data-aos-delay="300"><a href="application.html">Applications</a></li>
-                        <li data-aos="fade-up" data-aos-delay="400"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="flex-1 md:px-10">
-                    <ul class="leading-10 lg:leading-[56.16px] md:text-lg flex flex-col">
-                        <li data-aos="fade-up" data-aos-delay="500"><button class="text-lemon w-[162px] text-center border-2 border-white rounded-[26.78px]">Contact us</button></li>
-                        <li data-aos="fade-up" data-aos-delay="600">Email: info@minatofoundation.org</li>
-                        <li data-aos="fade-up" data-aos-delay="700">Phone: +1 (123) 456-7890</li>
-                        <li data-aos="fade-up" data-aos-delay="800">Address: 123 Foundation Lane, City, State, ZIP</li>
-                    </ul>
-                </div>
-                <div class="flex-1 md:px-10">
-                    <ul class="leading-[35px] md:text-lg  flex flex-col gap-[44px]">
-                        <li data-aos="fade-up" data-aos-delay="900"><p class="leading-[33.66px]">Together, we can make education and career opportunities accessible to all. Join us in making a difference!</p></li>
-                        <li data-aos="fade-up" data-aos-delay="1000"><button class="bg-lemon lemon-button text-white w-full lg:w-[224px] rounded-[36.78px] py-4">Become a volunteer</button></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="py-5">
-                <div class="flex gap-3 text-2xl">
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-square-instagram"></i>
-                    <i class="fa-brands fa-square-facebook"></i>
-                    <i class="fa-brands fa-square-x-twitter"></i>
-                </div>
-                <div class="text-right">
-                    <p>© 2024 Minato Foundation</p>
-                </div>
-            </div>
+    <footer
+      class="relative p-4 md:p-20 xl:pt-32 xl:px-32 bg-darkblue text-white"
+    >
+      <div class="">
+        <div data-aos="fade-right" data-aos-delay="50" class="my-20">
+          <img src="./images/footer.png" alt="" />
         </div>
+        <div
+          class="flex lg:flex-row flex-col gap-10 md:divide-x-2 divide-white"
+        >
+          <div class="flex-1 md:px-10">
+            <ul class="leading-9 lg:leading-[40px] md:text-lg flex flex-col">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <a href="about.html">About Us</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <a href="donate.html">Donate</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <a href="application.html">Applications</a>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="400">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1 md:px-10">
+            <ul
+              class="leading-10 lg:leading-[56.16px] md:text-lg flex flex-col"
+            >
+              <li data-aos="fade-up" data-aos-delay="500">
+                <button
+                  class="text-lemon w-[162px] text-center border-2 border-white rounded-[26.78px]"
+                >
+                  Contact us
+                </button>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="600">
+                Email: info@minatofoundation.org
+              </li>
+              <li data-aos="fade-up" data-aos-delay="700">
+                Phone: +1 (123) 456-7890
+              </li>
+              <li data-aos="fade-up" data-aos-delay="800">
+                Address: 123 Foundation Lane, City, State, ZIP
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1 md:px-10">
+            <ul class="leading-[35px] md:text-lg flex flex-col gap-[44px]">
+              <li data-aos="fade-up" data-aos-delay="900">
+                <p class="leading-[33.66px]">
+                  Together, we can make education and career opportunities
+                  accessible to all. Join us in making a difference!
+                </p>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="1000">
+                <button
+                  class="bg-lemon lemon-button text-white w-full lg:w-[224px] rounded-[36.78px] py-4"
+                >
+                  Become a volunteer
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="py-5">
+          <div class="flex gap-3 text-2xl">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+          </div>
+          <div class="text-right">
+            <p>© 2024 Minato Foundation</p>
+          </div>
+        </div>
+      </div>
     </footer>
-
-
-    <script src="./js/jquery-1.11.0.min.js"></script> <!-- jquery file-->
+    <script src="https://js.paystack.co/v2/inline.js"></script>
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <!-- jquery file-->
     <script src="./js/script.js"></script>
     <script>
-        document.addEventListener("DOMContentLoaded", ()=>{
-            AOS.init({
-                // Global settings:
-                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-                initClassName: 'aos-init', // class applied after initialization
-                animatedClassName: 'aos-animate', // class applied on animation
-                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-                offset: 120, // offset (in px) from the original trigger point
-                delay: 0, // values from 0 to 3000, with step 50ms
-                duration: 400, // values from 0 to 3000, with step 50ms
-                easing: 'ease-in-out', // default easing for AOS animations
-                once: true, // whether animation should happen only once - while scrolling down
-                mirror: false, // whether elements should animate out while scrolling past them
-                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-            });
-        })
+    const popup = new Paystack()
+
+const onElementsMount = (elements) => {
+  if (elements && elements.applePay) {
+    document.querySelector("#pay-button").innerText = "More Payment Options";
+  }
+}
+
+try {
+  await popup.paymentRequest({
+    key: 'pk_domain_xxxxxx',
+    email: 'testuser@paystack.com',
+    amount: 10000,
+    currency: "NGN",
+    container: 'payment-request-buttons',
+    loadPaystackCheckoutButton: 'pay-button',
+    styles: {
+      theme: 'dark',
+      applePay: {
+        width: '100%',
+        height: '50px',
+        borderRadius: '3px',
+        type: 'plain',
+        locale: 'en'
+      }
+    },
+    onElementsMount,
+  });
+} catch (error) {
+
+}
+    </script>
+    <!-- <script src="./js/stack.js"></script> -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        AOS.init({
+          // Global settings:
+          disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+          startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+          initClassName: "aos-init", // class applied after initialization
+          animatedClassName: "aos-animate", // class applied on animation
+          useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+          disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+          debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+          throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+          offset: 120, // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 400, // values from 0 to 3000, with step 50ms
+          easing: "ease-in-out", // default easing for AOS animations
+          once: true, // whether animation should happen only once - while scrolling down
+          mirror: false, // whether elements should animate out while scrolling past them
+          anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+        });
+      });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+  </body>
 </html>
