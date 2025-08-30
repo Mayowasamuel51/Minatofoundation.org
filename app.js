@@ -19,21 +19,30 @@ document.getElementById('minato-form').addEventListener('submit', async function
         }
 
         const result = await response.json();
+        console.log('Server response:', result);
 
         if (result.success) {
+            // Show success message
             document.getElementById('success-message').style.display = 'block';
+
+            // Reset form
             e.target.reset();
 
-            document.getElementById("word-count").textContent = `Words: 0/300`;
-            document.querySelector(".display-acad-name").textContent = "";
-            document.querySelector(".display-rec-name").textContent = "";
+            // Safe reset for optional elements
+            const wordCountEl = document.getElementById("word-count");
+            if (wordCountEl) wordCountEl.textContent = `Words: 0/300`;
 
-            alert(result.message);
+            const acadNameEl = document.querySelector(".display-acad-name");
+            if (acadNameEl) acadNameEl.textContent = "";
+
+            const recNameEl = document.querySelector(".display-rec-name");
+            if (recNameEl) recNameEl.textContent = "";
+
         } else {
-            alert(result.message || 'Something went wrong');
+            console.warn(result.message || 'Something went wrong ');
         }
     } catch (error) {
-        console.error('Error submitting form:', error);
+        console.error('Error submitting form this is already been used :', error);
         alert('Error submitting form. Please try again later.');
     }
 });
