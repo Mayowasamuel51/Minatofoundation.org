@@ -212,80 +212,143 @@
         </h1>
       </div>
       <div>
-       <form id="minato-form">
-  <div class="flex flex-col gap-10">
-    <ul class="list-disc text-white flex flex-col gap-10 p-4 md:p-0">
-      <!-- Full Name -->
-      <li class="border-b-2">
-        <label class="block  text-xl md:text-3xl">Full Name</label>
-       <input
+        <form action="">
+          <div class="flex flex-col gap-10">
+            <ul class="list-disc text-white flex flex-col gap-10 p-4 md:p-0">
+              <!-- Full Name -->
+              <li class="border-b-2">
+                <label
+                  class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                >
+                  Full Name
+                </label>
+                <input
                   type="text"
                   name="fullname"
                   placeholder="Enter your full name"
                   class="bg-transparent border-b-2 border-gray-400 text-white w-full py-2 focus:outline-none focus:border-lemon"
                 />
-      </li>
+              </li>
 
-      <!-- Email -->
-      <li class="border-b-2">
-        <label class="block text-white text-xl md:text-3xl">Email</label>
-          <input
+              <li class="border-b-2">
+                <label
+                  class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                >
+                  Email
+                </label>
+                <input
                   type="text"
                   name="email"
                   placeholder="Enter your email"
                   class="bg-transparent border-b-2 border-gray-400 text-white w-full py-2 focus:outline-none focus:border-lemon"
                 />
-      </li>
-
-      <!-- Age -->
-      <li class="border-b-2">
-        <label class="block text-white text-xl md:text-3xl">Age</label>
-    <input
+              </li>
+              <!-- Age -->
+              <li class="border-b-2">
+                <label
+                  class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                >
+                  Age
+                </label>
+                <input
                   type="number"
                   name="age"
                   placeholder="Enter your age"
                   class="bg-transparent border-b-2 border-gray-400 text-white w-full py-2 focus:outline-none focus:border-lemon"
                 />
-      </li>
+              </li>
 
-      <!-- Address -->
-      <li class="border-b-2">
-        <label class="block text-white text-xl md:text-3xl">Address</label>
-          <input
-        required
-
+              <!-- Address -->
+              <li class="border-b-2">
+                <label
+                  class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                >
+                  Address
+                </label>
+                <input
                   type="text"
                   name="address"
                   placeholder="Enter your address"
                   class="bg-transparent border-b-2 border-gray-400 text-white w-full py-2 focus:outline-none focus:border-lemon"
                 />
-      </li>
+              </li>
 
-      <!-- Personal Statement --> 
-      <li>
-        <label class="text-white text-xl md:text-3xl">A brief personal statement (300 words max)</label>
-        <textarea
-        required
+              <!-- Personal Statement -->
+              <li>
+                <label
+                  class="my-10 text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                  >A brief personal statement (300 words max) explaining your
+                  goals and how Minato Foundation can help you achieve
+                  them.</label
+                >
+                <textarea
                   class="bg-transparent border-none focus:border-none focus:outline-none w-full border-b-2 border-gray-400 text-white py-2"
                   id="lined-textarea"
-                  name="personalStatement"
                 ></textarea>
-      </li>
-    </ul>
+                <p class="lg:text-2xl" id="word-count" style="color: white">
+                  Words: 0/300
+                </p>
+              </li>
 
-    <!-- Success Message -->
-    <p id="success-message"   style="color: lime; display: none; font-size: large; font-weight: bold;">Form submitted successfully!</p>
+              <!-- Academic Transcripts -->
+              <li class="border-b-2">
+                <label
+                  class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                  >Upload your picture (if applicable)</label
+                >
+                <input
+                  class="w-full hidden"
+                  type="file"
+                  name="academic_transcript"
+                  id="academic_transcript"
+                />
+                <div class="flex items-center gap-4">
+                  <label for="academic_transcript">
+                    <div
+                      class="mb-2 flex items-center justify-center duration-300 gap-1 hover:gap-4 w-[197px] text-center rounded-[25px] bg-white text-black py-3 px-2 font-medium"
+                    >
+                      <p>Choose from file</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </label>
+                  <p class="display-acad-name"></p>
+                </div>
+              </li>
 
-    <!-- Submit Button -->
-    <button
-      type="submit"
-      class="text-center md:text-2xl text-white bg-lemon font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]"
-    >
-      Submit Form
-    </button>
-  </div>
-</form>
+              <!-- Recommendation Letter -->
+              <li class="border-b-2">
+                <label
+                  class="block w-full text-white text-xl md:text-3xl leading-[25px] md:leading-[55.44px]"
+                  >A letter of recommendation (optional).</label
+                >
+                <input
+                  class="w-full hidden"
+                  type="file"
+                  name="recommendation_letter"
+                  id="recommendation_letter"
+                />
+                <div class="flex items-center gap-4">
+                  <label for="recommendation_letter">
+                    <div
+                      class="mb-2 flex items-center justify-center duration-300 gap-1 hover:gap-4 w-[197px] text-center rounded-[25px] bg-white text-black py-3 px-2 font-medium"
+                    >
+                      <p>Choose from file</p>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                  </label>
+                  <p class="display-rec-name"></p>
+                </div>
+              </li>
+            </ul>
 
+            <!-- Submit Button -->
+            <button
+              class="text-center md:text-2xl text-white bg-lemon lemon-button font-medium w-[300px] md:w-[416px] mx-auto py-5 rounded-[60px]"
+            >
+              Submit Form
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
