@@ -43,7 +43,7 @@ document.getElementById('minato-form').addEventListener('submit', async function
         }
     } catch (error) {
         console.error('Error submitting form this is already been used :', error);
-        alert('Error submitting form. Please try again later.');
+        alert('Error submitting form this is already been used.');
     }
 });
 
